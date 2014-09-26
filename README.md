@@ -1,4 +1,13 @@
 CommitADay
 ==========
 
-One commit every day - Start - 09/26/14 (Filler project to commit when nothing else is happening)
+Project Code Every Day
+======================
+
+Objective: To get better at coding, you need to code.
+
+Here's a Git repo/project to try to commit some code on random projects 
+every day for one year.
+
+Start Date: 09-26-14
+End Date: 09-26-15
