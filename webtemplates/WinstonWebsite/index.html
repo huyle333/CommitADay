@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			Winston Chen
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="Winston Chen's Website, Boston University - Computer Engineer">
+    	<meta name="author" content="Winston Chen">
+	
+	</head>
+	<body>
+		<div class = "center" id = "aboutContainer">
+			<button type = "button" onClick = "hideTab('about')" class = "close">Close</button>
+			<div class = "aboutme" id = "about">
+				<h1> About Me </h1>
+				<h4></h4>
+				<hr>
+				<p>I am studying computer engineering at Boston University. My focus is software, but I also am interested in computer architecture and electrical engineering. I am a frequent hackathon participant and I like to build Raspberry Pi and Arudino hacks along with mobile apps in my spare time.</p>
+				<p>Go to the projects section for projects that I have worked on.</p>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3>Software Engineer at <a href = "http://www.constanttherapy.com">Constant Therapy</a> - May-Aug 2014</h3>
+						<p>Constant Therapy is a mobile health startup. They build mobile solutions as a tool to help clinicians assist patients in brain rehabilitation.</p>
+							<ul>Made changes to their website's infrastructure to be dynamic and scalable.</ul>
+							<ul>Developed a web app that allows any employee to make quick changes to their database regardless of 
+								programming knowledge (Flask and Java)</ul>
+							<ul>Web-scraped publicly available e-mails to target people most likely to use the Constant Therapy iPad application - increased email yield rates by 20% (Python, NodeJS, and PhantomJS)</ul>
+							<ul>Generated graphical representations of data for analytical purposes, using D3js</ul>
+					</div>
+					<div class = "aboutImages">
+						<img src = "img/ct.png">
+					</div>
+				</div>
+				<hr>
+				<h3><a href = "http://www.builds.bu.edu">Treasurer of BUILDS 2014-2015</a></h3>
+				<div class = "row">
+					<div class = "text">
+						<p>BUILDS (Boston University Information Lab and Design Space) is BU's hackerspace. BUILDS is a collaboration space where people work on their own projects and seek help from other members. When people aren't working on projects, they go to hackathons or Capture the Flag/Security events. BUILDS is also decked out with a basic workbench, soldering tools, arudinos, and other various tools to provide members with the necessary tools to finish projects. BUILDS is also opened to the public.</p>
+					</div>
+					<div class = "aboutImages">
+						<img src = "img/builds.png">
+					</div>
+				</div>
+				<hr>
+				<h3>Member of Massachusetts Green Team for <a href = "http://sc14.supercomputing.org/engage/hpc-interconnections/sc14-student-cluster-competition">Student Cluster Competition 2014</a></h3>
+				<div class = "row">
+					<div class = "text">
+						<p>"Held as part of HPC Interconnections, the Student Cluster Competition is designed to introduce the next generation of students to the high-performance computing community. Over the last couple of years, the competition has drawn teams from around the world, including Australia, Canada, China, Costa Rica, Germany, Russia and Taiwan. In this real-time, non-stop, 48-hour challenge, teams of undergraduate and/or high school students assemble a small cluster on the SC14 exhibit floor and race to demonstrate the greatest sustained performance across a series of applications."</p>
+						<p>My team consists of students from BU, MIT and Northeastern and our team advisor is Kurt Keville(MIT System Administrator). Our Sponsor is Silicon Mechanics. Currently, my team is optimizing the applications and preparing our final architecture build.</p>
+						<p> This year's applications are NAMD, ADCIRC, Matlab and an unkown mystery app</p>
+						<p>Final Architecture will be posted later.</p>
+					</div>
+					<div class = "aboutImages">
+						<img src = "img/scc.png">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "center" id = "projectsContainer">
+			<button type = "button" onClick = "hideTab('projects')" class = "close">Close</button>
+			<div class = "projects" id = "projects">
+				<h1> Projects </h1>
+				<h4>These are the projects that I've worked on or currently working on.</h4>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://github.com/winstonchen/Music-in-Motion">Music in Motion</a></h3>
+						<p>Music In Motion is Leap Motion powered virtual turntable. The turn table is controlled by simply hand motions. Fast forward and rewind by moving your hand back and forth respectively and moving your hand left or right muted the respecitive audio track are the current features impletmented.</p>
+						<p>There is also a an equilizer component that uses RGB LEDs. The equalizer simply reads changes in voltage via a transistor from an audio source and controls the voltage output to the LED strips. </p>
+						<p>This was a quick weekend project to help promote my hackerspace at Boston University's Splash. Splash is a an event for incoming or returning students to find clubs that they're interest in.</p>
+					</div>
+					<div class = "textImage">
+						<img src = "img/leap.png" class = "projectImage" style = "width: 350px;">
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://github.com/canary-dev">Canary</a></h3>
+						<p><a href = "https://twitter.com/PayPalDev/status/498572464931479552">BattleHack-Boston: Second Place</a></p>
+						<p>Canary is a crowd source solution to mapping pollution levels. Canary uses humidity, temperature, sound, carbon monoxide and methane sensors that are connected to an Arduino Uno to measure the various pollution in any given location. </p>
+						<p>My team also used a bluetooth low energy module to connect to an android device to transmit the data from the sensors. The Android app would mark the current location via GPS and send the data to our backend.We also had a website available to display the data from our backend in a visually appealing way on Google Maps. We also provided local orginizations where people can donate to help fight pollution in their areas.</p>
+					</div>
+					<div class = "textImage">
+						<img src = "img/canary.png" class = "projectImage">
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://github.com/winstonchen/RPiLightTricks">RPI Light Tricks</a></h3>
+						<p>I built a light pulse reader during MassHack as a one way communication from an iPhone to a Raspberry Pi. The Raspberry Pi would then communicate with our parse backend.This is just a smaller complement to my friends' TimeConnect project.</p>
+						<p>How it works: I built a simple circuit with a cheap photoresistor module that was connected to a Raspberry Pi. On the Raspberry Pi, I wrote several python scripts to handle data coming from the photoresistor, to detect and convert the data into a custom binary library (for quick reads) which is converted to morse code to generate a sting of characters (serves as a unique id) to be sent to a Parse database. </p>
+					</div>
+					<div class = "textImage">
+						<img src = "img/rpi.png" class = "projectImage">
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://github.com/winstonchen/amgine">Amgine</a></h3>
+						<p> Enigma's API Winner</p>
+						<p>Hacking Journalism was a unique hackathon, where Huy Le and I built an iOS application to visualize Enigma's public dataset. The Enigma website was pleasing to look at, but the data on the other hand didn't match their theme. So we decided prettify their data as well as developing a mobile platform for them.</p>
+						<p>10/10. People were very friendly. Would hack here again.</p>
+					</div>
+					<div class = "textImage">
+						<img src = "img/amgine.png" class = "projectImage">
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "http://www.bu.edu/ece/2014/06/17/ece-sophomores-win-1st-prize/">Echo Can</a></h3>
+						<p><a href = "http://challengepost.com/software/echo-can">Hack Boston Strong: First Place!</a></p>
+						<p>In honor of the Boston Marathon Bombing Victims, Intrepid Labs held Hack Boston Strong with the perspective of giving back to Boston. My team: Huy Le, Dean Shi and Corey Prak decided to build a hybrid recycling and trash can, that uses sound to determine whether an item should be recycled or trashed.</p>
+						<p>At the last minute, I decided to help my friends with this hack. My team came unprepared, with no hardware tools that I needed to effieciently accomplish what we visualized, so I improvised. I came up with a transistor amplifier circuit, with the help of Dean Shi, to reverse a speaker to a microphone. We connected this cicuit to an Arduino Uno to measure the frequency through a python library. </p>
+					</div>
+					<div class = "textImage">
+						<div class = "row">
+							<img src = "img/echocan.png" class = "projectImage">
+							<!-- <img src = "img/echocan2.png" class = "projectImage"> -->
+						</div>
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://github.com/huyle333/HackPrinceton">Optimal</a></h3>
+						<p><a href = "http://challengepost.com/software/optimal">SendGrid's API Winner</a></p>
+						<p>At Hack Princeton, my friends and I built an iOS application to help people share ideas via pictures, audio and a canvas. People can take a picture or use the canvas to doodle or write notes. Then people can annotate with an audio recording or text. To Share with others, we used SendGrid's API. Originally, SendGrid's iOS API could only send images, so we expanded their library to include any type of data type, so we can send audio files. </p>
+					</div>
+					<div class = "textImage">
+						<img src = "img/optimal.png" class = "projectImage">
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://github.com/winstonchen/StarChaser">StarChaser</a></h3>
+						<p>This was a small weekend project to help expand my understanding of Chrome extensions and the Chrome API. This extension is a timed website blocker to help people stay productive.I also added in achievements, to help people feel good about staying productive. The achievements are customizable, so anyone can edit them to their own preferences.</p>
+					</div>
+					<div class = "textImage">
+						<img src = "img/starchaser.png" class = "projectImage">
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://github.com/winstonchen/snappylink">SnappyLink</a></h3>
+						<p>Intuit's Best Application to Simplify the Business Life</p>
+						<p>Snappy Link is a chrome extension that opens up links in an iframe by hovering over that link. This allows the user to quickly view web pages without having to click on the link and switching to the new tab. Also, this extension can continually open links within an iframe, which essentially lowers the amount of tabs opened in the user's web browser. As a plus, this works on most images and videos.</p>
+					</div>
+					<div class = "textImage">
+						<img src = "img/snappylink.png" class = "projectImage">
+					</div>
+				</div>
+				<hr>
+				<div class = "row">
+					<div class = "text">
+						<h3><a href = "https://twitter.com/zumbatech/status/403970993334411264">Zumba Fitness's Node Defender</a></h3>
+						<p>First and Second Place</p>
+						<p>At the Ultimate Developer's Event, Zumba Fitness created a game, where the player would write javascript to achieve the highest possbile score in a survival game. Huy Le and I came up with a general script that got us around 90k points on average. But during our testing of the game, we realize that we can get a higher score if we can get the ideal scenario. And we saw no penalty against how many games we play. So, we brute forced our way to first and second by running the script over night. As a result, We swept first and second, while achieving the most rounds and most waves survived.</p>
+					</div>
+					<div class = "textImage" style = "margin-bottom:7%;">
+						<img src = "img/nodedefender.png" class = "projectImage">
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class = "centerBlock">
+			<div class = "header">
+				<a href = "/static/doc/Winston%20Chen%20-%20Resume%20(2014).pdf" id="resume">
+					<img src = "img/resume.png" id = "resumeImg" class = "headerImg">
+				</a>
+				<a href = "http://github.com/winstonchen" id = "github">
+					<img src = "img/github.png" id = "githubImg" class = "headerImg">
+				</a>
+				<a href = "http://www.linkedin.com/in/winstonc94" id = "linkedin">
+					<img src = "img/linkedin.png" id = "linkedinImg" class = "headerImg">
+				</a>
+				<a href = "mailto:winstonc@bu.edu" id = "email">
+					<img src = "img/email.png" id = "emailImg" class = "headerImg">
+				</a>
+			</div>
+			<div id = "hero">
+				<img id = "heroImage" src = "img/hero.png">
+			</div>
+			<div class = "footer">
+				<button class = "tabs" id = "aboutmeTab" onClick = "showTab('about')">
+					<div class = "centerTab">
+						<img src = "img/about.png" id = "aboutMeImg">	
+						<span><Strong>About Me</Strong></span>	
+					</div>
+				</button>
+				<button class = "tabs" id = "projectsTab" onClick = "showTab('projects')">
+					<div class = "centerTab">
+						<img src = "img/projects.png" id = "projectsImg">
+						<span><Strong>Projects</Strong></span>
+					</div>
+				</button>
+			</div>
+		</div>
+	</body>
+	<link rel=stylesheet type=text/css href="css/site.css">
+	<script src="js/jquery.2.1.1.min.js"></script>
+	<script src="js/site.js"></script>
+</html>
+

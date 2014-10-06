@@ -1,0 +1,79 @@
+h1, h3, h4, p, li, ul, a, strong, button {
+  font-family: sans-serif;
+  color: white;
+  text-decoration: none; }
+
+hr {
+  color: white; }
+
+.header {
+  width: 99%;
+  height: 65px;
+  margin-top: 0px;
+  position: absolute;
+  z-index: 10; }
+  .header #left {
+    display: inline-block; }
+  .header #right {
+    display: inline-block;
+    float: right; }
+
+h3 {
+  text-decoration: underline; }
+
+.container {
+  width: 100%;
+  padding-top: 60px; }
+  .container .center {
+    border-radius: 15px;
+    border: 2px solid #5a6c71;
+    margin: 0 auto;
+    background-color: black;
+    width: 100%; }
+    .container .center .resume {
+      display: none;
+      overflow-y: auto;
+      width: 90%;
+      margin: 0 auto; }
+    .container .center .aboutme {
+      width: 90%;
+      margin: 0 auto; }
+      .container .center .aboutme .aboutImage {
+        margin: 0 auto; }
+    .container .center .projects {
+      width: 90%;
+      margin: 0 auto; }
+      .container .center .projects .row .text {
+        width: 50%;
+        display: inline-block; }
+      .container .center .projects .row .textImage {
+        width: 45%;
+        display: inline-block;
+        margin: 0 auto; }
+        .container .center .projects .row .textImage .projectImage {
+          border-radius: 10px;
+          display: block;
+          margin: 0 auto; }
+
+.footer {
+  position: fixed;
+  width: 100%;
+  height: 75px;
+  margin-top: 5px; }
+  .footer #resumeTab {
+    background-color: lime;
+    font-size: 25px; }
+  .footer #aboutmeTab {
+    background-color: red;
+    font-size: 25px; }
+  .footer #projectsTab {
+    background-color: blue;
+    font-size: 25px; }
+
+.tabs {
+  display: inline-block;
+  width: 30%;
+  border-radius: 10px;
+  padding: 5px 10px; }
+  .tabs .centerTab {
+    text-align: center; }

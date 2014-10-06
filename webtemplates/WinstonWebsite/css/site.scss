@@ -1,0 +1,145 @@
+$black:rgba(0,0,0,1);
+$white: rgba(255,255,255,1);
+$iB: inline-block;
+$center: 0 auto;
+
+h1, h3, h4, p, li, ul,a, strong{
+	font-family: sans-serif;
+	color: $white;
+	text-decoration: none;
+}
+
+hr{
+	color: $white;
+}
+body{
+	background: url("../img/boston.png");
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	overflow-y: scroll;
+}
+.centerBlock{
+	margin: $center;
+	width: 350px;
+	position: relative;
+    top: 50%;
+    transform: translateY(10%);
+    height: 600px;
+    overflow-y: scroll;
+	.header{
+		width: 300px;
+		margin: $center;
+		padding-left:30px;
+		.headerImg:hover{
+			opacity: 0.7;
+		}
+	}
+	h3 {
+		text-decoration: underline;
+	}
+	#heroImage{
+		margin-top: 20px;
+		margin-bottom: 20px;
+		margin-left: 40px;
+		border-radius: 400px;
+	}
+	.footer{
+		position: fixed;
+		margin-top: 5px;
+		#aboutmeTab{
+			background-color: rgba(250,0,0,1);
+			font-size: 25px;
+		}
+		#projectsTab{
+			background-color: rgba(0,0,250,1);
+			font-size: 25px;
+		}
+	}
+	.tabs{
+		margin: $center;
+		display: block;
+		width: 330px;
+		border-radius: 10px;
+		padding: 5px 10px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+		.centerTab{
+			text-align: center;
+		}
+	}
+	.tabs:hover{
+		opacity: 0.7;
+		cursor: pointer;
+	}
+}
+.close{
+		width: 150px;
+		height: 75px;
+		background-color: $white;
+		color: $black;
+		border-radius: 20px;
+		font-family: sans-serif;
+		font-size: 20px;
+	}
+.close:hover{
+	opacity: 0.7;
+	cursor: pointer;
+	}
+#aboutContainer{
+	border-radius: 15px;
+	margin: $center;
+	background-color: $black;
+	width:99%;
+	display:none;
+	z-index: 10;
+	position: absolute;
+	a{
+		text-decoration: underline;
+	}
+		.aboutme{
+			display: none;
+			overflow-y: auto;
+			width:90%;
+			margin: $center;
+			height: 90%;
+			.aboutImage{
+				margin: $center;
+			}
+		}
+	}
+#projectsContainer{
+	border-radius: 15px;
+	margin: $center;
+	background-color: $black;
+	width:99%;
+	display:none;
+	z-index: 10;
+	position: absolute;
+	a{
+		text-decoration: underline;
+	}
+	.projects{
+		display: none;
+		overflow-y: scroll;
+		width:90%;
+		margin: $center;
+		height: 90%;
+		.row{
+			.text{
+				width: 50%;
+				display:$iB;
+			}
+			.textImage{
+				width: 45%;
+				display:$iB;
+				margin: $center;
+				.projectImage{
+					border-radius: 10px;
+					display:block;
+					margin: $center;
+				}
+			}	
+		}
+	}
+	}
